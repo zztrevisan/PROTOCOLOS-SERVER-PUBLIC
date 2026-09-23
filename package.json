@@ -1,0 +1,19 @@
+{
+  "name": "protocolos-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server-turso.js",
+  "scripts": {
+    "start": "node server-turso.js",
+    "test": "node scripts/check-syntax.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@libsql/client": "^0.17.4",
+    "@tursodatabase/serverless": "^1.4.0",
+    "express": "^5.2.1"
+  }
+}

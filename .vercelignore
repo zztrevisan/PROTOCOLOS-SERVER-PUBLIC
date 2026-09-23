@@ -1,0 +1,13 @@
+.env
+.env.*
+!.env.example
+.git/
+node_modules/
+banco/
+*.log
+server.js
+teste-turso.js
+preparar-turso.js
+criar-admin-turso.js
+migrar-backup-para-turso.js
+normalizar-administrador-geral.js
