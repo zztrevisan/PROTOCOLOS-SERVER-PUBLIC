@@ -1,0 +1,30 @@
+{
+  "name": "protocolos-server",
+  "version": "1.0.0",
+  "description": "Aplicação interna para emissão, entrega e rastreabilidade de protocolos.",
+  "main": "server.js",
+  "scripts": {
+    "start": "npm run start:internal",
+    "start:internal": "node server.js",
+    "start:cloud": "node server-turso.js",
+    "prepare:cloud": "node preparar-turso.js",
+    "test": "node scripts/check-syntax.js"
+  },
+  "keywords": [
+    "protocolos",
+    "documentos",
+    "rastreabilidade"
+  ],
+  "author": "Guilherme Andrade dos Santos Trevisan",
+  "license": "UNLICENSED",
+  "private": true,
+  "engines": {
+    "node": ">=24"
+  },
+  "type": "commonjs",
+  "dependencies": {
+    "@libsql/client": "^0.17.4",
+    "@tursodatabase/serverless": "^1.4.0",
+    "express": "^5.2.1"
+  }
+}
